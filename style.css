@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+
+.hero-section {
+    display: flex;
+    width: 100%;
+    outline: 1px solid red;
+}
+
+.hero-section > div {
+    flex: auto;
+    height: 100px;
+}
+
+.hero-section > div:first-child {
+    background-color: blueviolet;
+}
+
+.hero-section > div:last-child {
+    background-color: chocolate;
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+}
