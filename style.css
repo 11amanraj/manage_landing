@@ -5,7 +5,6 @@
 .hero-section {
     display: flex;
     width: 100%;
-    outline: 1px solid red;
 }
 
 .hero-section > div {
@@ -21,8 +20,30 @@
     background-color: chocolate;
 }
 
+.features {
+    display: flex;
+    width: 100%;
+}
+
+.features > div {
+    flex: auto;
+    height: 100px;
+}
+
+.features > div:first-child {
+    background-color: black;
+}
+
+.features > div:last-child {
+    background-color: green;
+}
+
 @media (min-width: 768px) {
     .hero-section {
         flex-direction: column-reverse;
+    }
+
+    .features {
+        flex-direction: column;
     }
 }
