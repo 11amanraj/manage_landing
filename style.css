@@ -4,6 +4,14 @@
     --fs-xl: clamp(1.5rem, 5vw + 1rem, 3.5rem);
 }
 
+@media (min-width: 768px) {
+    :root {
+        --fs-400: 1rem;
+        --fs-600: 2rem;
+        --fs-xl: clamp(1.5rem, 5vw + 1rem, 3.5rem);
+    }
+}
+
 * {
     margin: 0;
 }
@@ -67,12 +75,6 @@ html {
 }
 
 @media (min-width: 768px) {
-    :root {
-        --fs-400: 1rem;
-        --fs-600: 2rem;
-        --fs-xl: clamp(1.5rem, 5vw + 1rem, 3.5rem);
-    }
-
     html {
         margin: 0 10vw;
     }
