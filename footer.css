@@ -10,7 +10,7 @@ footer {
     clip-path: inset(0 -100vmax);
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 3rem; 
 }
 
@@ -50,4 +50,14 @@ a {
 
 .social-links ul {
     display: flex;
+}
+
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+    }
+
+    .social-links {
+        flex-direction:  column;
+    }
 }
