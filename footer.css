@@ -50,6 +50,17 @@ a {
 
 .social-links ul {
     display: flex;
+    flex: 1;
+    gap: 2rem;
+    width: 100%;
+}
+
+.social-links li {
+    flex: 1;
+}
+
+.social-links img {
+    width: clamp(40px, 100%, 60px);
 }
 
 @media (min-width: 768px) {
@@ -59,5 +70,13 @@ a {
 
     .social-links {
         flex-direction:  column;
+    }
+
+    .social-links ul {
+        gap: 0.5rem;
+    }
+
+    .social-links img {
+        width: 16px;
     }
 }
